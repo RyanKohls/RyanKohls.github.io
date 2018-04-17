@@ -1,0 +1,44 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    color: darkslateblue;
+}
+
+nav{
+    float: left;
+    background-color: black;
+    border: 3px solid green;
+    color: white;
+    
+    padding-left: 0px;
+    padding-top: 20px;
+    
+    height: 500px;
+    overflow-y: visible;
+    max-height: 500px;
+}
+ul#nav{
+    list-style-type: none;
+    padding: 0px;
+    text-align: left;
+    padding: 3px;
+
+}
+
+button{
+    font-size: 125%;
+    color: white;
+    background-color: dimgray;
+    padding: 5px;
+    margin: 5px;
+}
+
+p{
+    border: 2 px solid yellow;
+}
+
+article{
+    background-color: antiquewhite;
+    border: 2px solid green;
+}
