@@ -87,3 +87,13 @@ footer{
     color: floralwhite;
     float: left;
 }
+
+#Logo{
+    width: 175px;
+    float: left;
+}
+
+#Guitar{
+    width:150px;
+    float:right
+}
