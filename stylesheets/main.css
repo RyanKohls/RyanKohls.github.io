@@ -6,6 +6,20 @@ h1{
     color: darkslateblue;
 }
 
+h2{
+    color: darkslateblue;
+/*    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;*/
+}
+
+h3,h4,h5,h6{
+    color: darkslateblue;
+    font-weight: bold;
+}
+
 dt{
     font-weight: bold;
 }
