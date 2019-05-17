@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica", sans-serif;
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas:    "header header header"
+                            ". article ."
+                            "footer footer footer";
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    width: 100%;
+    background-color: black;
+    align-items: flex-start;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    grid-area: nav;
+    color: white;
+}
+
+nav a{
+    display: block;
+    padding: 10px;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+a:active {
+    opacity: 0.3;
+}
+
+.aside-left {
+    grid-area: aside-left;
+/*    background-image: url("music-background.PNG");*/
+    background-size: cover;
+}
+
+.aside-right {
+    grid-area: aside-right;
+/*    background-image: url("space_header.jpg");*/
+    background-size: cover;
+}
+
+article {
+    grid-area: article;
+    padding: 20px;
+}
+
+article > div {
+    background-color: #fafafa;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Work Experience Section*/
+.work-experience {
+    display: grid;
+    grid-template-rows: 75px auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:    "company company"
+                            "title date"
+                            "description description";
+    border: 2px solid black;
+    grid-gap: 10px;
+    padding: 5px;
+    background-color: rgb(240, 240, 240);
+    align-items: center;
+}
+
+.company {
+    grid-area: company;
+    height: 100%;
+    width: auto;
+}
+
+.date {
+    grid-area: date;
+    text-align: right;
+    font-style: italic;
+}
+
+.title {
+    grid-area: title;
+}
+
+.description {
+    grid-area: description;
+}
+
+.description li {
+    margin-bottom: 5px;
+}
+/*Images*/
+
+.small-image, .medium-image, .full-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;    
+}
+
+.small-image {
+    width: 40%;
+}
+
+.medium-image {
+    width: 60%;
+}
+.full-image {
+    width: 90%;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
